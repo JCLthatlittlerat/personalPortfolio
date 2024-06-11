@@ -91,20 +91,28 @@ footer {
 /*========================Home css=======================*/
 .p-home{
     font-family: cursive;
-    font-size: 32px;
+    font-size: 38px;
     font-weight: 600;
 }
 .home-page{
 
-min-height: 100vh;
+/* min-height: 100vh; */
 display: flex;
 justify-content: space-around;
 }
 .home-text{
-    padding-block: 15%;
+    width: 40%;
+    padding: 15%;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
 }
+.p-home span{
+    color: rgb(0 179 191);
+}
+
 .home-photo{
     background: url(/00_profile-image.png);
     width: 35%;
@@ -163,7 +171,7 @@ justify-content: space-around;
 }
 .about-par{
     /*adjust the font using the google font*/
-    font-family: "Lobster","Dancing Script", 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* font-family: "Lobster","Dancing Script", 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
     font-style: oblique;
     font-size:xx-large;
     font-weight: bold;
