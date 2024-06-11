@@ -375,7 +375,6 @@ justify-content: space-around;
     flex-direction: row;
 }
 .project-1{
-    background: url();
     display: flex;
     flex-direction: column;
     margin-top: 25px;
