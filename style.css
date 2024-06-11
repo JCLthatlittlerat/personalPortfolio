@@ -79,13 +79,23 @@ li a{
 }
 
 /*========================Footer css=======================*/
-footer {
-    background-color: gainsboro;
+.main-footer {
+    background-color: rgb(169, 231, 235);
     text-align: center;
     padding: 1rem 0;
     bottom: 0;
-
-    position:relative;
+    position: relative;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    height: 200px;
+    justify-content: space-around;
+}
+.footerUp{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /*========================Home css=======================*/
@@ -114,14 +124,17 @@ justify-content: space-around;
 }
 
 .home-photo{
-    background: url(/00_profile-image.png);
-    width: 35%;
+    background: url(/background-shape.png);
+    width: 50%;
+    height: 50%;
     background-size: contain;
     background-repeat: no-repeat;
-    /* display: flex;
-    justify-content: space-between;
-    padding-block: 10%; */
+    background-position-y: bottom;
     
+}
+
+.home-photo img{
+    width: 85%;
 }
 .home-photo:hover{
     cursor: pointer;
