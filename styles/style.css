@@ -95,7 +95,7 @@ li a{
     flex-direction: column;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    height: 200px;
+    /* height: 200px; */
     justify-content: space-around;
     padding: 2%;
     margin-top: 3%;
@@ -149,7 +149,7 @@ justify-content: space-around;
 }
 
 .home-photo{
-    background: url(/background-shape.png);
+    background: url(/assets/background-shape.png);
     width: 50%;
     height: 50%;
     background-size: contain;
@@ -194,6 +194,13 @@ justify-content: space-around;
 }
 .about-photo{
     display: flex;   
+    background: url(/img/about-profile.jpg);
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position-x: bottom;
+
 }
 
 .about-text{
@@ -219,6 +226,24 @@ justify-content: space-around;
     font-size:xx-large;
     font-weight: bold;
 }
+.downloadCV{
+    background-color: paleturquoise;
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 1% 2%;
+    box-shadow: 1px 1px 6px;
+}
+
+.viewMore{
+    background-color: paleturquoise;
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 1% 2%;
+    box-shadow: 1px 1px 6px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
 
 /*skills section css*/
 .skills-container{
@@ -237,7 +262,7 @@ justify-content: space-around;
     display: flex;
     flex-direction: column;
     border-radius: 5%;
-    width: 600px;
+    width: 60%;
     min-height: 500px;
     margin: 50px auto;
     color:beige;
@@ -372,13 +397,26 @@ justify-content: space-around;
 .project-container{
     display: flex;
     justify-content: space-evenly;
-    flex-direction: row;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+}
+.projectContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .project-1{
+    background: url(/img/work-1.png);
     display: flex;
     flex-direction: column;
     margin-top: 25px;
     margin-bottom: 25px;
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
 }
 .link{
     display: flex;
@@ -391,6 +429,10 @@ justify-content: space-around;
     flex-direction: column;
     margin-top: 25px;
     margin-bottom: 25px;
+    background: url(/img/work-1.png);
+    width: 400px;
+    height: 300px;
+    border-radius: 15px;
 
 }
 .project-3{
@@ -398,12 +440,24 @@ justify-content: space-around;
     flex-direction: column;
     margin-top: 25px;
     margin-bottom: 25px;
+    background: url(/img/work-1.png);
+
+    width: 400px;
+    height: 300px;
+    border-radius: 15px;
+
 }
 .project-4{
     display: flex;
     flex-direction: column;
     margin-top: 25px;
     margin-bottom: 25px;
+    background: url(/img/work-1.png);
+
+    width: 400px;
+    height: 300px;
+    border-radius: 15px;
+
 }
 
 /*contact me css*/
@@ -486,7 +540,9 @@ border-radius: 50px;
 .input-field-part{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .btn{
@@ -514,3 +570,143 @@ border-radius: 50px;
     justify-content: space-around;
 }
 
+
+
+
+
+/* Add icon styles */
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item i {
+    margin-right: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .home-page {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-text, .home-photo {
+        width: 100%;
+        padding: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-photo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-text {
+        width: 60%;
+    }
+
+    .skills-container {
+        width: 100%;
+    }
+
+    .projects-main {
+        width: 100%;
+    }
+
+    .project-set1, .project-set2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projectContainer {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .contact-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item {
+        flex-direction: column;
+    }
+
+    .nav-item i {
+        margin-right: 0;
+    }
+
+    .nav-text {
+        display: none;
+    }
+
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerUp {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .addressLeft, .addressRight {
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo a {
+        font-size: 24px;
+    }
+
+    .p-home {
+        font-size: 24px;
+    }
+
+    .about-par {
+        font-size: large;
+    }
+
+    .home-photo img {
+        width: 100%;
+    }
+
+    .skills-container {
+        width: 100%;
+    }
+
+    .project-set1, .project-set2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projectContainer {
+        width: 400px;
+        margin-bottom: 20px;
+    }
+}
