@@ -429,10 +429,13 @@ justify-content: space-around;
     flex-direction: column;
     margin-top: 25px;
     margin-bottom: 25px;
-    background: url(/img/work-1.png);
+    background: url(/img/project-3.jpg);
     width: 400px;
     height: 300px;
     border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
 
 }
 .project-3{
