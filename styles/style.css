@@ -148,15 +148,28 @@ justify-content: space-around;
     color: rgb(0 179 191);
 }
 
-.home-photo{
-    background: url(/assets/background-shape.png);
+/* .home-photo{
+     background: url(/assets/background-shape.png); 
     width: 50%;
     height: 50%;
     background-size: contain;
     background-repeat: no-repeat;
     background-position-y: bottom;
+    animation-name: background-shape-moving;
+    
+} */
+.background-shape{
+    width: 50%;
+    height: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    animation-name: background-shape-moving;
+}
+@keyframes {
     
 }
+
 
 .home-photo img{
     width: 85%;
