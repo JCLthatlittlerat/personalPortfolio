@@ -148,30 +148,44 @@ justify-content: space-around;
     color: rgb(0 179 191);
 }
 
-/* .home-photo{
-     background: url(/assets/background-shape.png); 
+.home-photo{
+    /* background: url(/assets/background-shape.png);  */
     width: 50%;
     height: 50%;
-    background-size: contain;
+    /* background-size: contain;
     background-repeat: no-repeat;
     background-position-y: bottom;
-    animation-name: background-shape-moving;
+    animation-name: background-shape-moving; */
+    position: relative;
     
-} */
+}
 .background-shape{
-    width: 50%;
-    height: 50%;
-    background-size: contain;
+    position: absolute;
+    width: 550px;
+    top: 30%;
+    left: 5%;
+    z-index: -1;
+    /* background-size: contain;
     background-repeat: no-repeat;
-    background-position-y: bottom;
+    background-position-y: bottom; */
     animation-name: background-shape-moving;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
-@keyframes {
+@keyframes background-shape-moving{
+ 0%{ transform: translateX(0); }
+ 25%{ transform: translateX(150px);}
+ 50%{transform: translateX(0); }
+ 75%{ transform: translateX(-150px);}
+ 100%{transform: translateX(0); }
+
     
 }
 
 
-.home-photo img{
+
+.main-image{
     width: 85%;
 }
 .home-photo:hover{
