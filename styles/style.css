@@ -144,6 +144,23 @@ justify-content: space-around;
     padding-left: 5%;
     padding-right: 5%;
 }
+.little-hand{
+    animation-name: hand-waving-animation;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes hand-waving-animation{
+    0%{}
+    10%{transform: scale(2);}
+    30%{ transform: translateX(50px); transform: translateY(50px);}
+    60%{transform: translateX(-50px); transform: translateY(-60px);}
+    80%{transform: translateX(50px); transform: translateY(50px);}
+    100%{transform: scale(2); transform: translateX(0px); transform: translateY(0px);}
+
+
+}
 .p-home span{
     color: rgb(0 179 191);
 }
